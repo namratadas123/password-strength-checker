@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 18px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #eae7e7;
+}
+/* the"forgot password" text*/
+span.psw{
+    float:right;
+    padding: top 10px;
+}
+
+body{
+  margin: 5px;
+  box-shadow:-3px -1px 37px 24px rgba(29, 1, 1, 0.2);
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #121212;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #7eab2a;
+  color: rgb(11, 0, 0);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #d71e10;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #363637;
+}
+.container{
+  position: relative;
+  max-width: 460px;
+  width: 100%;
+  background: #f3f7f8;
+  border-radius: 4px;
+  padding: 30px;
+  margin: 0 20px;
+  box-shadow: 0 10px 60px rgba(17, 16, 16, 0.2);
+}
+.container .input-box{
+  position: relative;
+}
+.input-box .show_hide{
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #171717;
+  padding: 5px;
+  cursor: pointer;
+}
+.input-box input{
+  height: 60px;
+  width: 100%;
+  border: 2px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #141414;
+  outline: none;
+  padding: 0 50px 0 16px;
+}
+.container .indicator{
+  display: none;
+}
+.container .indicator.active{
+  display: block;
+  margin-top: 14px;
+}
+.indicator .icon-text{
+  display: flex;
+  align-items: center;
+}
+.icon-text .error_icon{
+  margin-right: 8px;
+}
+.icon-text .text{
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
